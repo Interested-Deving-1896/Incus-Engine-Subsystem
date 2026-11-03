@@ -1,0 +1,37 @@
+schema_version: 1
+subsystem:
+  name: Incus Engine Subsystem
+  repository: Interested-Deving-1896/Incus-Engine-Subsystem
+  engine: Incus
+  description: Cross-platform Incus guest operating-system tooling and image infrastructure.
+
+components:
+  - id: linux-toolkit
+    name: Incus Linux Toolkit
+    repository: Interested-Deving-1896/incus-linux-toolkit
+    platform: linux
+    role: Linux-specific Incus tooling and guest integration
+
+  - id: waydroid-toolkit
+    name: Incus Waydroid Toolkit
+    repository: Interested-Deving-1896/incus-waydroid-toolkit
+    platform: android
+    role: Android and Waydroid guest integration
+
+  - id: macos-toolkit
+    name: Incus macOS Toolkit
+    repository: Interested-Deving-1896/Incus-MacOS-Toolkit
+    platform: macos
+    role: macOS-specific Incus tooling and integration
+
+  - id: windows-toolkit
+    name: Incus Windows Toolkit
+    repository: Interested-Deving-1896/incus-windows-toolkit
+    platform: windows
+    role: Windows-specific Incus tooling and integration
+
+  - id: image-server
+    name: Incus Image Server
+    repository: Interested-Deving-1896/incus-image-server
+    platform: cross-platform
+    role: Incus image publication and serving infrastructure
